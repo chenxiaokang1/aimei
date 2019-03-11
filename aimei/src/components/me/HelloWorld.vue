@@ -1,13 +1,12 @@
 <template>
   <div class="hello">
-    <header>
-    	<h1>首页</h1>
-    </header>
     <section class="sec">
-    	<h1>内容</h1>
+    	<router-view></router-view>
     </section>
     <footer class="foo">
-    	<h1>首页</h1>
+    	<router-link to="/home">首頁</router-link>
+    	<router-link to="/zheng">整形項目</router-link>
+    	<router-link to="/super">超級名片</router-link>
     </footer>
     
   </div>
