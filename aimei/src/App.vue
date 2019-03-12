@@ -26,7 +26,7 @@ body {
     overflow:auto;
     height: 100%;
     overflow-y: scroll;    
-    
+    background: #f5f5f5;
    -webkit-overflow-scrolling: touch;  
     padding-bottom: 1rem;
     /*防止长按出现阴影*/
