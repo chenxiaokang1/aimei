@@ -3,7 +3,7 @@
     <section class="sec">
     	<router-view class="view"></router-view>
     </section>
-        <div class="not">
+     <div class="not">
     </div>
     <footer class="foo">
     	<router-link to="/home">首頁</router-link>
@@ -29,18 +29,18 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-html,body{
-   width: 100%;
-   height: 100%;
-}
+
 .hello{
   width: 100%;
    height: 100%;
 }
-
+.sec{
+  width: 100%;
+  height: 100%;
+}
 .view{
   width: 100%;
-  height: 12.34rem;
+   height: 100%;
 }
 .foo{
   width: 100%;
@@ -55,7 +55,8 @@ html,body{
   background: #ffffff;
 }
 .not{
+  float: left;
   width: 100%;
-  height: 1rem;
+  height: 1.5rem;
 }
 </style>
