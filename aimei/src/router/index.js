@@ -5,7 +5,6 @@ import Home from '@/components/me/Home'
 import Zheng from '@/components/me/Zheng'
 import Super from '@/components/me/Super'
 
-
 Vue.use(Router)
 
 export default new Router({
@@ -20,7 +19,7 @@ export default new Router({
       		path: '/home',
       		component: Home
       	},
-      	{	
+      	{
       		path: '/zheng',
       		component: Zheng
       	},
@@ -29,8 +28,7 @@ export default new Router({
       		component: Super
       	}
       ]
-    }
+    },
     
-
   ]
 })
