@@ -7,8 +7,12 @@
     	<router-link to="/home">首頁</router-link>
     	<router-link to="/zheng">整形項目</router-link>
     	<router-link to="/super">超級名片</router-link>
+      <router-link to="/myCenter">我的</router-link>
     </footer>
-    
+    <div class="bottom">
+
+
+    </div>
   </div>
 </template>
 
@@ -19,7 +23,8 @@ export default {
     return {
       msg: ''
     }
-  }
+  },
+
 }
 </script>
 
@@ -35,5 +40,20 @@ export default {
 
 .sec{
 	flex: 1;
+}
+.foo{
+  width: 100%;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 1rem;
+  border-top: 0.01rem solid #ccc;
+}
+.bottom{
+  width: 100%;
+  height: 1rem;
 }
 </style>
