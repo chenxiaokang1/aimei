@@ -1,18 +1,17 @@
 <template>
   <div class="hello">
     <section class="sec">
-    	<router-view></router-view>
+    	<router-view class="view"></router-view>
     </section>
+        <div class="not">
+    </div>
     <footer class="foo">
     	<router-link to="/home">首頁</router-link>
     	<router-link to="/zheng">整形項目</router-link>
     	<router-link to="/super">超級名片</router-link>
       <router-link to="/myCenter">我的</router-link>
     </footer>
-    <div class="bottom">
 
-
-    </div>
   </div>
 </template>
 
@@ -30,16 +29,18 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-
+html,body{
+   width: 100%;
+   height: 100%;
+}
 .hello{
-	display: flex;
-	flex-direction: column;
-	height: 100vh;
-	width: 100vw;
+  width: 100%;
+   height: 100%;
 }
 
-.sec{
-	flex: 1;
+.view{
+  width: 100%;
+  height: 12.34rem;
 }
 .foo{
   width: 100%;
@@ -51,8 +52,9 @@ export default {
   align-items: center;
   height: 1rem;
   border-top: 0.01rem solid #ccc;
+  background: #ffffff;
 }
-.bottom{
+.not{
   width: 100%;
   height: 1rem;
 }
