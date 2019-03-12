@@ -3,8 +3,7 @@
     <section class="sec">
     	<router-view class="view"></router-view>
     </section>
-     <div class="not">
-    </div>
+ 
     <footer class="foo">
     	<router-link to="/home">首頁</router-link>
     	<router-link to="/zheng">整形項目</router-link>
@@ -41,6 +40,7 @@ export default {
 .view{
   width: 100%;
    height: 100%;
+   overflow: auto;
 }
 .foo{
   width: 100%;
@@ -55,9 +55,5 @@ export default {
   background: #ffffff;
   overflow: hidden;
 }
-.not{
-  float: left;
-  width: 100%;
-  height: 1.5rem;
-}
+
 </style>
