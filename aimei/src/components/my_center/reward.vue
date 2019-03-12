@@ -1,6 +1,6 @@
 <template>
 <div>
-       <div class="cont_box">
+    <div class="cont_box">
         <div class="box-top">
             <p>提现金额：</p>
             <p><input type="text">元</p>
