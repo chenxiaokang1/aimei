@@ -8,10 +8,6 @@ import Zheng from '@/components/me/Zheng'
 import Super from '@/components/me/Super'
 import Quan from '@/components/me/Quan'
 
-<<<<<<< HEAD
-
-=======
->>>>>>> 5078ef194693bb4d77f69d80c25aecb4bf859def
 Vue.use(Router)
 
 export default new Router({
