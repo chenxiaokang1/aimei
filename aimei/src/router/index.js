@@ -8,10 +8,6 @@ import Zheng from '@/components/me/Zheng'
 import Super from '@/components/me/Super'
 import Quan from '@/components/me/Quan'
 
-<<<<<<< HEAD
-
-=======
->>>>>>> aeb898a31d40b57b345601aeb3fcf1ee3f6750b4
 Vue.use(Router)
 
 export default new Router({
@@ -27,7 +23,6 @@ export default new Router({
       		component: Home
       	},
       	{
-<<<<<<< HEAD
 					path: '/zheng',
 				
 					component: Zheng,
@@ -38,10 +33,6 @@ export default new Router({
 							component: Quan
 						},
 					]
-=======
-      		path: '/zheng',
-      		component: Zheng
->>>>>>> aeb898a31d40b57b345601aeb3fcf1ee3f6750b4
       	},
       	{
       		path: '/super',

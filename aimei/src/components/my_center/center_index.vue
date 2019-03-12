@@ -40,7 +40,7 @@
           <img src="../../assets/nav4.png" alt>
           <p>奖励中心</p>
         </div>
-        <div class="box_li">
+        <div class="box_li" @click="goto_view('myOrder')">
           <img src="../../assets/nav5.png" alt>
           <p>我的订单</p>
         </div>
@@ -48,7 +48,7 @@
           <img src="../../assets/nav6.png" alt>
           <p>购物车</p>
         </div>
-        <div class="box_li">
+        <div class="box_li"  @click="goto_view('address')">
           <img src="../../assets/nav7.png" alt>
           <p>收货地址</p>
         </div>
