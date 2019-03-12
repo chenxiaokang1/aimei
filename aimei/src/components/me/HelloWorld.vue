@@ -33,6 +33,9 @@ export default {
   width: 100%;
    height: 100%;
 }
+.router-link-active{
+		color: #c1a25f;
+	}
 .sec{
   width: 100%;
   height: 100%;
