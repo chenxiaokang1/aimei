@@ -12,7 +12,7 @@
           <img src="../../assets/qian.png" alt>
           <p>奖励：0.00</p>
         </div>
-        <div class="item_box">
+        <div class="item_box" @click="goto_view('love')">
           <img src="../../assets/aixin.png" alt>
           <p>爱心：0</p>
         </div>  
@@ -32,11 +32,11 @@
           <img src="../../assets/nav2.png" alt>
           <p>爱心</p>
         </div>
-        <div class="box_li">
+        <div class="box_li" @click="goto_view('rank')">
           <img src="../../assets/nav3.png" alt>
           <p>排行榜</p>
         </div>
-        <div class="box_li">
+        <div class="box_li" @click="goto_view('rewardCenter')">
           <img src="../../assets/nav4.png" alt>
           <p>奖励中心</p>
         </div>
