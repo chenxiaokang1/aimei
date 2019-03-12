@@ -1,5 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
+
+import { Swipe, SwipeItem } from 'vant';
 import HelloWorld from '@/components/me/HelloWorld'
 import Home from '@/components/me/Home'
 import Zheng from '@/components/me/Zheng'

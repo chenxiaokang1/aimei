@@ -3,9 +3,12 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
-
+import Vant from 'vant';
+import 'vant/lib/index.css'
+import { Swipe, SwipeItem } from 'vant';
 Vue.config.productionTip = false
-
+Vue.use(Vant)
+Vue.use(Swipe).use(SwipeItem);
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
