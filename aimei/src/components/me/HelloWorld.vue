@@ -53,6 +53,7 @@ export default {
   height: 1rem;
   border-top: 0.01rem solid #ccc;
   background: #ffffff;
+  overflow: hidden;
 }
 .not{
   float: left;

@@ -46,6 +46,9 @@
 		width: 100%;
 		height: 100%;
 	}
+	.rong{
+		position: relative;
+	}
 	.top{
 	display: flex;
 	justify-content: space-around;
@@ -53,7 +56,7 @@
     height: 2rem;
     margin-left: 0.2rem;
     position: absolute;
-    top: 3.4rem;
+		top: -0.15rem;
     border: .01rem #ebebeb;
     border-radius: 0.1rem;
     background: #FFFFFF;
