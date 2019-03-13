@@ -12,6 +12,11 @@ import Sx from '@/components/me/Sx'
 import Mr from '@/components/me/Mr'
 import Xz from '@/components/me/Xz'
 import Ns from '@/components/me/Ns'
+import Bj from '@/components/me/Bj'
+import Ys from '@/components/me/Ys'
+import Detail from '@/components/me/Detail'
+import Zsxm from '@/components/me/Zsxm'
+import Gou from '@/components/me/Gou'
 
 Vue.use(Router)
 
@@ -61,9 +66,29 @@ export default new Router({
       	{
       		path: '/super',
       		component: Super
-      	}
+		  },
+		  {
+			path: '/ys',
+			component: Ys
+		},
+		
       ]
-    },
-    
+	},
+	{
+		path: '/bj',
+		component: Bj
+	},
+	{
+		path: '/zsxm',
+		component: Zsxm
+	},
+	{
+		path: '/gou',
+		component: Gou
+	},
+    {
+			path: '/detail',
+			component: Detail
+		},
   ]
 })

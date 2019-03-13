@@ -1,5 +1,12 @@
 <template>
 	<div class="home">
+	<van-actionsheet
+  v-model="show"
+  :actions="actions"
+  cancel-text="取消"
+  @select="onSelect"
+  @cancel="onCancel"
+/>
 		<van-swipe :autoplay="3000" indicator-color="white">
 		  <van-swipe-item><img src="../../assets/1.jpg"></van-swipe-item>
 		  <van-swipe-item><img src="../../assets/2.jpg"></van-swipe-item>
@@ -7,20 +14,26 @@
 		</van-swipe>
 		<div class="rong">
 			<ul class="top">
-				<li v-for="(item,i) in msg" :key="i"><img src="../../assets/1.jpg"><span>{{item}}</span></li>
+				<router-link to="/zheng" tag="li"><img src="../../assets/1.jpg"><span>整形项目</span></router-link>
+				<router-link to="/ys" tag="li"><img src="../../assets/1.jpg"><span>整形医生</span></router-link>
+				<router-link to="/super" tag="li"><img src="../../assets/1.jpg"><span>超级名片</span></router-link>
+				<li @click="show = true" ><img src="../../assets/1.jpg"><span>客服咨询</span></li>
+			
+				<!-- <li v-for="(item,i) in msg" :key="i"><img src="../../assets/1.jpg"><span>{{item}}</span></li> -->
 			</ul>
+				
 		</div>
 		<div class="zhaoshang">
 			<h1>艾美招商<span class="ling">&diams;</span></h1>
 			<ul class="zhao3">
-				<li v-for="(item,i) in zhao" :key="i"><img :src="item.img"><span>{{item.ren}}</span><span class="se">{{item.many}}</span></li>
+				<router-link to="/zsxm" tag="li" v-for="(item,i) in zhao" :key="i"><img :src="item.img"><span>{{item.ren}}</span><span class="se">{{item.many}}</span></router-link>
 			</ul>
 		</div>
 		<div class="docter">
 			<h1>整形医生<span class="ling">&diams;</span></h1>
 			
 			<ul class="doc">
-					<li v-for="(item,i) in ter" :key="i"><img :src="item.img"><span>{{item.ren}}</span></li>
+					<router-link to="/detail" tag="li" v-for="(item,i) in ter" :key="i"><img :src="item.img"><span>{{item.ren}}</span></router-link>
 			</ul>
 		
 		</div>
@@ -28,9 +41,10 @@
 			<h1>艾美整形项目<span class="ling">&diams;</span></h1>
 			<img src="../../assets/1.png" class="too">
 			<ul class="xiang2">
-				<li v-for="(item,i) in xiang" :key="i"><img :src="item.img"><span>{{item.ren}}</span><span class="se">{{item.many}}</span></li>
+				<router-link to="/gou" tag="li" v-for="(item,i) in xiang" :key="i"><img :src="item.img"><span>{{item.ren}}</span><span class="se">{{item.many}}</span></router-link>
 			</ul>
 		</div>
+		
 	</div>
 </template>
 
@@ -41,7 +55,7 @@
   name: 'Home',
   data () {
     return {
-      msg: ["整形项目","整形医生","超级名片","客服咨询"],
+      msg: ["","","",""],
       zhao:[
 						{ren:"艾美联合创始人",many:"￥0.00",img:require("../../assets/1.jpg")},
 						{ren:"艾美总裁",many:"￥0.00",img:require("../../assets/1.jpg")},
@@ -62,9 +76,37 @@
 						{ren:"艾美合伙人",many:"￥0.00",img:require("../../assets/1.jpg")},
 						{ren:"形象代言人",many:"￥0.00",img:require("../../assets/1.jpg")},
 						],
+			show: false,
+      actions: [
+        {
+          name: '1234566'
+        },
+        {
+          name: '呼叫',
+          subname: ''
+        },
+       
+        
+        
+      ]
+
+
     }
 
+	},
+	 methods: {
+    onSelect(item) {
+      // 点击选项时默认不会关闭菜单，可以手动关闭
+      // this.show = false;
+			//  this.$toast(item.name);
+			location.href="tel://"+12345
+		},
+		onCancel(item) {
+      console.log(111)
+    }
+		
   }
+	
 }
 </script>
 

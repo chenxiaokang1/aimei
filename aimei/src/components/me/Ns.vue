@@ -40,6 +40,7 @@ export default {
         width: 100%;
         height: 80%;
         border-radius: 0.2rem;
+            margin-top: 1.55rem;
     }
     .sese{
         line-height: 0.6rem;

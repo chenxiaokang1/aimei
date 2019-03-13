@@ -35,6 +35,7 @@ export default {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
+            margin-top: 1.55rem;
     }
     .lsuo li{
         width: 3.43rem;
