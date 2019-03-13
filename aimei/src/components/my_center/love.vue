@@ -23,11 +23,11 @@
                 <p>0</p>
                 <p>已抵扣的爱心值</p>
             </div>
-            <div class="show_item">
+            <div class="show_item" @click="goto_view('giveLove')">
                 <img src="../../assets/bl.png" alt="">
                 <p>爱心值转让</p>
             </div>
-            <div class="show_item">
+            <div class="show_item" @click="goto_view('loveOrder')">
                  <img src="../../assets/bx.png" alt="">
                 <p>爱心值订单（2）</p>
             </div>
@@ -44,6 +44,12 @@ export default {
     }
   },
   methods:{
+      goto_view(url){
+         this.$router.push({  //核心语句
+         path:"/"+url  //跳转的路径
+       
+      })
+    }
   }
 }
 

@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="item" v-for="(item,index) in 3" :key="index">
+    <div class="item" v-for="(item,index) in order_list" :key="index">
       <div class="item_top" >
         <p class="name">张三</p>
         <p class="tel">17634810426</p>
@@ -8,7 +8,7 @@
       <div class="address">河南省 郑州市 金水区 国基路60号国家知识产权创意园区</div>
       <div class="item_bot">
           <div  class="bot_left">
-                <van-switch v-model="checked"  @change="change()"  size="17px"/>
+                <van-switch v-model="item.ischeck"  @change="change()"  size="17px"/>
                 <span>默认地址</span>
           </div>
           <div class="bot_but">
@@ -25,7 +25,18 @@
 export default {
   data() {
     return {
-        checked:false
+        checked:false ,
+        order_list:[
+            {
+                ischeck:false
+            },
+            {
+                ischeck:false
+            },
+            {
+                ischeck:false
+            }
+        ]
     };
   },
   methods: {
