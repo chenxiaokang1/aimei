@@ -28,7 +28,6 @@ body {
     overflow-y: scroll;    
     background: #f5f5f5;
    -webkit-overflow-scrolling: touch;  
-    padding-bottom: 1rem;
     /*防止长按出现阴影*/
     -webkit-tap-highlight-color: transparent !important;
     -webkit-touch-callout: none !important;
