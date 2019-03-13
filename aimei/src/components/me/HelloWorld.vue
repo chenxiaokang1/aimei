@@ -1,7 +1,7 @@
 <template>
   <div class="hello">
     <section class="sec">
-    	<router-view class="view"></router-view>
+    	<router-view></router-view>
     </section>
  
     <footer class="foo">

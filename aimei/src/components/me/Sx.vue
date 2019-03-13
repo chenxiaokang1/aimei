@@ -30,6 +30,7 @@ export default {
     .lsuo{
         display: flex;
         flex-wrap: wrap;
+            margin-top: 1.55rem;
         
     }
     .lsuo li{

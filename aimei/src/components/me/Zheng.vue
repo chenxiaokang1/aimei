@@ -30,7 +30,13 @@
 </script>
 
 <style sxoped>
-
+header{
+  position: fixed;
+    width: 100%;
+}
+section{
+  
+}
 .van-search__content{
   border-radius: 0.34rem;
 }
@@ -46,6 +52,7 @@ section{
 .tap{
   display: flex;
   justify-content: space-around;
+  background: white;
 }
 .router-link-active{
 		color: #c1a25f;
