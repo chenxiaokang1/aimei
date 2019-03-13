@@ -3,7 +3,6 @@
     <van-address-edit
       :area-list="areaList"
      
-      show-delete
       show-set-default
      
       :search-result="searchResult"
@@ -23,9 +22,11 @@ export default {
     }
   },
     mounted() {
-        console.log(address)
+
+  
     },
   methods: {
+    
     onSave() {
       Toast('save');
     },
@@ -45,5 +46,12 @@ export default {
   }
 }
 </script>
-<style scoped>
+<style >
+.van-button--danger{
+  background: #c1a25f !important;
+  border: none;
+  width: 4rem;
+  margin: 0 auto;
+}
+/*  */
 </style>

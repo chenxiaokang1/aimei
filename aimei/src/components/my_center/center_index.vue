@@ -48,11 +48,11 @@
           <img src="../../assets/nav6.png" alt>
           <p>购物车</p>
         </div>
-        <div class="box_li"  @click="goto_view('address')">
+        <div class="box_li"  @click="goto_view('addressAdd')">
           <img src="../../assets/nav7.png" alt>
           <p>收货地址</p>
         </div>
-        <div class="box_li">
+        <div class="box_li"  @click="goto_view('hb')">
           <img src="../../assets/nav8.png" alt>
           <p>超级海报</p>
         </div>

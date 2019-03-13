@@ -44,6 +44,7 @@ export default {
   width: 100%;
    height: 100%;
    overflow: auto;
+   margin-bottom: 1rem;
 }
 .foo{
   width: 100%;
