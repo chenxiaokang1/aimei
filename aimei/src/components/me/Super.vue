@@ -1,6 +1,6 @@
 <template>
 	<div class="zhen">
-		<h1>名片</h1>
+		<button>添加名片</button>
 	</div>
 </template>
 
