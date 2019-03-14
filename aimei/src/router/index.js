@@ -26,7 +26,10 @@ import reward from '@/components/my_center/reward'
 import love from '@/components/my_center/love'
 import rank from '@/components/my_center/ranking'
 import rewardCenter from '@/components/my_center/reward_center'
+import rewardDetail from '@/components/my_center/reward_detail'
+import rewardOrder from '@/components/my_center/reward_order'
 import myOrder from '@/components/my_center/my_order'
+import orderDetail from '@/components/my_center/order_detail'
 import addressAdd from '@/components/my_center/address_add'
 import address from '@/components/my_center/address'
 import hb from '@/components/my_center/hb'
@@ -40,6 +43,7 @@ import setinfo from '@/components/my_center/set_info'
 import bindPhone from '@/components/my_center/bind_phone'
 import giveLove from '@/components/my_center/give_love'
 import loveOrder from '@/components/my_center/love_order'
+import cart from '@/components/my_center/cart'
 Vue.use(Router)
 
 export default new Router({
@@ -115,80 +119,98 @@ export default new Router({
 	},
 	
 	// lilielei
-	,
-    {
-      path: '/reward',
-      component: reward
-    },
-    {
-      path: '/love',
-      component: love
-		},
-		{
-      path: '/rank',
-      component: rank
-		},
-		{
-      path: '/rewardCenter',
-      component: rewardCenter
-    },
-		{
-      path: '/myOrder',
-      component: myOrder
-    },
-    {
-      path: '/addressAdd',
-      component: addressAdd
-    },
-    {
-      path: '/address',
-      component: address
-    },
-    {
-      path: '/hb',
-      component: hb
-    },
-    {
-      path: '/teamIndex',
-      component: teamIndex
-    },
-    {
-      path: '/bigData',
-      component: bigData
-    },
-    {
-      path: '/myFans',
-      component: myFans
-    },
-    {
-      path: '/myTeam',
-      component: myTeam
-    },
-    {
-      path: '/brand',
-      component: brand
-    },
-    {
-      path: '/problem',
-      component: problem
-    },
-    {
-      path: '/setinfo',
-      component: setinfo
-    },
-    {
-      path: '/bindPhone',
-      component: bindPhone
-    },
-    {
-      path: '/giveLove',
-      component: giveLove
-    }
-    ,
-    {
-      path: '/loveOrder',
-      component: loveOrder
-    }
+  ,
+  {
+    path: '/reward',
+    component: reward
+  },
+  {
+    path: '/love',
+    component: love
+  },
+  {
+    path: '/rank',
+    component: rank
+  },
+  {
+    path: '/rewardCenter',
+    component: rewardCenter
+  },
+  {
+    path: '/rewardDetail',
+    component: rewardDetail
+  },
+  {
+    path: '/rewardOrder',
+    component: rewardOrder
+  },
+  {
+    path: '/myOrder',
+    component: myOrder
+  },
+  {
+    path: '/addressAdd',
+    component: addressAdd
+  },
+  {
+    path: '/address',
+    component: address
+  },
+  {
+    path: '/hb',
+    component: hb
+  },
+  {
+    path: '/teamIndex',
+    component: teamIndex
+  },
+  {
+    path: '/bigData',
+    component: bigData
+  },
+  {
+    path: '/myFans',
+    component: myFans
+  },
+  {
+    path: '/myTeam',
+    component: myTeam
+  },
+  {
+    path: '/brand',
+    component: brand
+  },
+  {
+    path: '/problem',
+    component: problem
+  },
+  {
+    path: '/setinfo',
+    component: setinfo
+  },
+  {
+    path: '/bindPhone',
+    component: bindPhone
+  },
+  {
+    path: '/giveLove',
+    component: giveLove
+  }
+  ,
+  {
+    path: '/loveOrder',
+    component: loveOrder
+  },
+  {
+    path: '/orderDetail',
+    component: orderDetail
+  }
+  ,
+  {
+    path: '/cart',
+    component: cart
+  }
+  
     
   ]
 })

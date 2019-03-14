@@ -1,5 +1,7 @@
 <template>
   <div>
+    <van-nav-bar title="收货地址"  left-arrow @click-left="reruen"></van-nav-bar>
+
     <div class="item" v-for="(item,index) in order_list" :key="index">
       <div class="item_top" >
         <p class="name">张三</p>
@@ -40,6 +42,10 @@ export default {
     };
   },
   methods: {
+      // 返回
+    reruen(){
+        this.$router.back(-1)
+    },
       change(e){
           console.log(this.checked)
       },

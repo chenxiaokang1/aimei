@@ -1,5 +1,7 @@
 <template>
  <div>
+    <van-nav-bar title="我的团队"  left-arrow @click-left="reruen"></van-nav-bar>
+     
      <div class="tab">
          <div class="tab_item " @click="checkThis(1)" :class="oneAcat?'act':''">
             直接(12)
@@ -42,6 +44,10 @@ export default {
     }
   },
   methods:{
+           // 返回
+    reruen(){
+        this.$router.back(-1)
+    },
       checkThis(item){
           var that= this;
           if(item == 1){

@@ -1,5 +1,7 @@
 <template>
  <div>
+    <van-nav-bar title="排行榜"  left-arrow @click-left="reruen"></van-nav-bar>
+
      <div class="nav">
          <div   @click="check_nav($event)" v-for="(item ,index) in nav_data" :key="index" :id="item.id"  class="nav_item" :class="act_nav == index ? 'nav_act':''">
              {{item.name}}
@@ -57,7 +59,7 @@
 
                  </div>
                 <span class="bane">美创占用就</span>
-                <span class="jf">积分：320</span>
+                <span class="jf">爱心：320</span>
              </div>
          </div>
      </div>
@@ -84,7 +86,7 @@
 
                  </div>
                 <span class="bane">美创占用就</span>
-                <span class="jf">积分：320</span>
+                <span class="jf">消费：320</span>
              </div>
          </div>
      </div>
@@ -111,7 +113,7 @@
 
                  </div>
                 <span class="bane">美创占用就</span>
-                <span class="jf">积分：320</span>
+                <span class="jf">佣金：320</span>
              </div>
          </div>
      </div>
@@ -145,6 +147,10 @@ export default {
     }
   },
   methods:{
+       // 返回
+    reruen(){
+        this.$router.back(-1)
+    },
       check_nav(ele){
           console.log(ele.target.id)
             this.act_nav = ele.target.id

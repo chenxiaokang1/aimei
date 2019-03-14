@@ -1,5 +1,8 @@
 <template>
+
   <div class="center">
+    <van-nav-bar title="我的团队"  left-arrow @click-left="reruen"></van-nav-bar>
+
     <div class="head">
       <div class="head_img">
         <img src="../../assets/no_login.png" alt>
@@ -47,6 +50,10 @@ export default {
     return {};
   },
   methods: {
+             // 返回
+    reruen(){
+        this.$router.back(-1)
+    },  
        goto_view(url){
          this.$router.push({  //核心语句
          path:"/"+url  //跳转的路径

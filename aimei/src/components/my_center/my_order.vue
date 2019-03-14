@@ -1,5 +1,7 @@
 <template>
   <div>
+    <van-nav-bar title="我的订单"  left-arrow @click-left="reruen"></van-nav-bar>
+
     <div class="nav">
       <div
         @click="check_nav($event)"
@@ -11,7 +13,7 @@
       >{{item.name}}</div>
     </div>
     <div class="order-list">
-      <div class="order_item" v-for="(item,index) in show_msg" :key="index">
+      <div class="order_item"  @click="goto_detail('orderDetail')" v-for="(item,index) in show_msg" :key="index">
         <div class="order_top">
           <p class="time">{{item.time}}</p>
           <p class="type" v-if="item.order_type==1">未付款</p>
@@ -125,6 +127,10 @@ export default {
     this.check_shop_type();
   },
   methods: {
+    // 返回
+    reruen(){
+        this.$router.back(-1)
+    },  
     check_nav(ele) {
       console.log(ele.target.id);
       this.act_nav = ele.target.id;
@@ -165,6 +171,12 @@ export default {
         });
       }
       _this.show_msg = data;
+    },
+    goto_detail(e){
+       this.$router.push({
+        //核心语句
+        path: "/" + e //跳转的路径
+      });
     }
   }
 };

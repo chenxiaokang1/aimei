@@ -1,5 +1,7 @@
 <template>
   <div class="center">
+    <van-nav-bar title="奖励中心"  left-arrow @click-left="reruen"></van-nav-bar>
+
     <div class="head">
       <div class="head_img">
         <img src="../../assets/no_login.png" alt>
@@ -22,12 +24,12 @@
         </div>
     </div>
     <div class="bot">
-        <div class="bot_item">
+        <div class="bot_item" @click="goto_view('rewardDetail')">
             <img src="../../assets/blw.png" alt="">
             <p>奖励明细</p>
             <p>0 元</p>
         </div>
-        <div class="bot_item">
+        <div class="bot_item"  @click="goto_view('rewardOrder')">
             <img src="../../assets/bwj.png" alt="">
             <p>奖励订单</p>
             <p>0 个</p>
@@ -46,7 +48,18 @@ export default {
   data() {
     return {};
   },
-  methods: {}
+  methods: {
+     // 返回
+    reruen(){
+        this.$router.back(-1)
+    },
+    goto_view(url) {
+      this.$router.push({
+        //核心语句
+        path: "/" + url //跳转的路径
+      });
+    },
+  }
 };
 </script>
 <style scoped>

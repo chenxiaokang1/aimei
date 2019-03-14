@@ -1,5 +1,7 @@
 <template>
   <div>
+    <van-nav-bar title="绑定手机"  left-arrow @click-left="reruen"></van-nav-bar>
+
     <input class="tel" type="text" placeholder="请输入手机号">
     <div class="eCode">
       <input type="text" placeholder="请输入验证码">
@@ -21,6 +23,10 @@ export default {
     };
   },
   methods: {
+    // 返回
+    reruen(){
+        this.$router.back(-1)
+    },
     getCode() {
       const TIME_COUNT = 10;
       if (!this.timer) {

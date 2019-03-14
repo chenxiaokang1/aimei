@@ -1,5 +1,7 @@
 <template>
  <div>
+      <van-nav-bar title="大数据采集"  left-arrow @click-left="reruen">
+    </van-nav-bar>
      <div class="nav">  
          <div class="nav_item">
              姓名
@@ -28,6 +30,10 @@ export default {
     }
   },
   methods:{
+      // 返回
+    reruen(){
+        this.$router.back(-1)
+    },
   }
 }
 

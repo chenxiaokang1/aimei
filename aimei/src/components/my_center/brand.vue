@@ -1,6 +1,8 @@
 <template>
-  <div class="content">
-    <img src="../../assets/brand.png" alt>
+  <div >
+    <van-nav-bar title="品牌介绍"  left-arrow @click-left="reruen"></van-nav-bar>
+    <div class="content">
+       <img src="../../assets/brand.png" alt>
     <div>
       艾美整形美容是雅加达最早的专业整形美容机构，属印尼三鼎集团的分支医疗机构，艾美的前身是印尼康美整形。艾美自成立以来，始终坚持以品质树品牌的办院宗旨，视手术质量为生命线。<br><br>
       郑州艾美整形美容医院是经过河南省卫生厅行政部门批准的专科整形美容医院，医院采用专利技术，打造和谐精致的美容和妙曼的形体，医院还定期邀约明星御用抗衰老大师以及御用整形大师为求美者做整形设计。<br><br>
@@ -21,6 +23,8 @@
       1.绝不私自调整项目价格给我的上帝。<br><br>
       2.绝不拉帮结派破坏团队和谐绝不传播负面情绪或思想。<br><br>
     </div>
+    </div>
+   
   </div>
 </template>
 
@@ -29,7 +33,12 @@ export default {
   data() {
     return {};
   },
-  methods: {}
+  methods: {
+    // 返回
+    reruen(){
+        this.$router.back(-1)
+    },
+  }
 };
 </script>
 <style scoped>

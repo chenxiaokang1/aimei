@@ -1,5 +1,7 @@
 <template>
   <div>
+    <van-nav-bar title="爱心值订单"  left-arrow @click-left="reruen"></van-nav-bar>
+
     <div class="order-list">
       <div class="order_item" v-for="(item,index) in shop_msg" :key="index">
         <div class="order_top">
@@ -79,6 +81,10 @@ export default {
     };
   },
   methods: {
+    // 返回
+    reruen(){
+        this.$router.back(-1)
+    },
       remove(e){
           console.log(e.target.id)
           Dialog.confirm({

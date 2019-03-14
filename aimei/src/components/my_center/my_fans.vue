@@ -1,5 +1,7 @@
 <template>
  <div>
+    <van-nav-bar title="我的粉丝"  left-arrow @click-left="reruen"></van-nav-bar>
+
      <div class="nav">  
          <div class="nav_item">
              会员信息
@@ -28,9 +30,14 @@
 export default {
   data () {
     return {
+   
     }
   },
   methods:{
+           // 返回
+    reruen(){
+        this.$router.back(-1)
+    },
   }
 }
 

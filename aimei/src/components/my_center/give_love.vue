@@ -1,5 +1,7 @@
 <template>
   <div>
+    <van-nav-bar title="爱心值转让"  left-arrow @click-left="reruen"></van-nav-bar>
+
     <van-search v-model="value" placeholder="请输入搜索关键词" show-action shape="round" @search="onSearch">
       <div slot="action" @click="onSearch">搜索</div>
     </van-search>
@@ -62,6 +64,10 @@ export default {
     console.log(this.showData);
   },
   methods: {
+     // 返回
+    reruen(){
+        this.$router.back(-1)
+    },
     //   模糊查询
     onSearch() {
       console.log(this.value);

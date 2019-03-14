@@ -1,5 +1,7 @@
 <template>
 <div>
+    <van-nav-bar title="奖励提现"  left-arrow @click-left="reruen"></van-nav-bar>
+
     <div class="cont_box">
         <div class="box-top">
             <p>提现金额：</p>
@@ -25,6 +27,10 @@ export default {
     }
   },
   methods:{
+       // 返回
+    reruen(){
+        this.$router.back(-1)
+    },
   }
 }
 

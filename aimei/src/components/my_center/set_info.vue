@@ -1,5 +1,7 @@
 <template>
   <div>
+    <van-nav-bar title="修改资料"  left-arrow @click-left="reruen"></van-nav-bar>
+
     <van-cell-group>
       <van-field type label="姓名：" placeholder="请输入姓名 "/>
       <van-field
@@ -97,6 +99,10 @@ export default {
     };
   },
   methods: {
+     // 返回
+    reruen(){
+        this.$router.back(-1)
+    },
     //   选择性别
     choose_sex() {
       this.show = true;

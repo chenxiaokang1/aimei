@@ -1,5 +1,7 @@
 <template>
   <div>
+    <van-nav-bar title="收货地址"  left-arrow @click-left="reruen"></van-nav-bar>
+
     <van-address-edit
       :area-list="areaList"
      
@@ -26,7 +28,10 @@ export default {
   
     },
   methods: {
-    
+    // 返回
+    reruen(){
+        this.$router.back(-1)
+    },
     onSave() {
       Toast('save');
     },

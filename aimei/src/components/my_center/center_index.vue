@@ -1,5 +1,7 @@
 <template>
   <div>
+    <van-nav-bar title="我的" ></van-nav-bar>
+
     <div class="head">
       <div class="no_login" v-if="nologin">
         <img src="../../assets/no_login.png" alt>
@@ -54,8 +56,8 @@
     </div>
     <div class="child_nav">
       <div class="box">
-        <div class="box_li" >
-          <img src="../../assets/nav1.png" alt>
+        <div class="box_li" @click="goto_view('reward')" >
+          <img src="../../assets/nav1.png"  alt>
           <p>奖励提现</p>
         </div>
         <div class="box_li" @click="goto_view('love')">
@@ -74,7 +76,7 @@
           <img src="../../assets/nav5.png" alt>
           <p>我的订单</p>
         </div>
-        <div class="box_li">
+        <div class="box_li" @click="goto_view('cart')">
           <img src="../../assets/nav6.png" alt>
           <p>购物车</p>
         </div>
@@ -86,7 +88,7 @@
           <img src="../../assets/nav8.png" alt>
           <p>超级海报</p>
         </div>
-        <div class="box_li">
+        <div class="box_li"  @click="goto_view('super')">
           <img src="../../assets/nav9.png" alt>
           <p>超级名片</p>
         </div>
