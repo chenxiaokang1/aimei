@@ -17,6 +17,7 @@ import Ys from '@/components/me/Ys'
 import Detail from '@/components/me/Detail'
 import Zsxm from '@/components/me/Zsxm'
 import Gou from '@/components/me/Gou'
+import Ming from '@/components/me/Ming'
 
 
 
@@ -116,7 +117,12 @@ export default new Router({
     {
       path: '/detail',
       component: Detail
-	},
+  },
+  {
+    path: '/ming',
+    component: Ming
+},
+
 	
 	// lilielei
   ,
