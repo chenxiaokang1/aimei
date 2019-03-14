@@ -29,7 +29,7 @@
 }
 </script>
 
-<style sxoped>
+<style scoped>
 header{
   position: fixed;
     width: 100%;
