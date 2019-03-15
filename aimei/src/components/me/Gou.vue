@@ -170,4 +170,7 @@ section{
     width: 100%;
     height: 100%;
 }
+.van-button{
+    border: none;
+}
 </style>
