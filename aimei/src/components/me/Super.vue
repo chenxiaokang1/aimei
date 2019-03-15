@@ -66,4 +66,8 @@
     margin-left: 1.6rem;
     border-radius: 0.2rem;
   }
+  .van-button--primary{
+    background: #c1a25f;
+    border-color: #c1a25f;
+  }
 </style>

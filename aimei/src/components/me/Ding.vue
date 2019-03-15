@@ -39,7 +39,7 @@
      <footer>
          
              <p class="one">合计金额:  <span>￥{{mony}}</span></p>
-             <p class="two">去付款</p>
+             <router-link to="/zf" class="two" >去付款</router-link>
 
          
      </footer>
@@ -134,7 +134,7 @@ footer p{
     float: right;
 }
 .zhonu{
-    background: white;
+    
     margin: 0.1rem 0;
 }
 .zhonu li{
@@ -143,5 +143,6 @@ footer p{
     margin-top:0.1rem;
     border-top: 0.01rem solid #f5f5f5;
     border-bottom: 0.01rem solid #f5f5f5;
+    background: white;
 }
 </style>

@@ -56,16 +56,7 @@
          </van-popup>
          <van-popup v-model="show5" position="right" >
              <Ding></Ding>
-             <!-- <div class="toyou">
-                 
-                 <van-nav-bar
-                    title="整形项目"
-                    left-text="返回"
-                    
-                    left-arrow
-                    @click-left="onClickLeft"
-                    />
-             </div> -->
+            
          </van-popup>
      </footer>
  </div>
@@ -141,6 +132,7 @@ section{
 }
 .top{
     display: flex;
+    margin-top: 0.3rem;
     
 }
 .top ul{

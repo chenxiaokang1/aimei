@@ -18,6 +18,7 @@ import Detail from '@/components/me/Detail'
 import Zsxm from '@/components/me/Zsxm'
 import Gou from '@/components/me/Gou'
 import Ming from '@/components/me/Ming'
+import Zf from '@/components/me/Zf'
 
 
 
@@ -121,6 +122,10 @@ export default new Router({
   {
     path: '/ming',
     component: Ming
+},
+{
+  path: '/zf',
+  component: Zf
 },
 
 	

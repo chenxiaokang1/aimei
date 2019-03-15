@@ -22,61 +22,69 @@
           placeholder="请输入姓名"
           
           />
-          <van-field
+          <!-- <van-field
           v-model="nan"
           type="text"
           label="性别"
           placeholder="请输入性别"
           
-          />
+          /> -->
+          <van-field
+        type
+        label="性别："
+        placeholder="请选择性别 >"
+        :value="sex_value"
+        @click="choose_sex()"
+        readonly
+      />
           <van-field
           v-model="password"
           type="password"
-          label="密码"
+          label="密码:"
           placeholder="请输入密码"
           
           />
          <van-field
           v-model="tell"
           type="tell"
-          label="手机"
+          label="手机:"
           placeholder="请输入手机"
           
           />
          <van-field
           v-model="nana"
           type="number"
-          label="微信"
+          label="微信:"
           placeholder="请输入微信（非必填）"
           
           />
           <van-field
           v-model="nanb"
           type="text"
-          label="邮箱"
+          label="邮箱:"
           placeholder="请输入邮箱（非必填）"
           
           />
           <van-field
           v-model="nanc"
           type="text"
-          label="公司"
+          label="公司:"
           placeholder="请输入公司名称（非必填）"
           
           />
 
           <van-field
-          
-          type="text"
-          label="职位"
-          placeholder="请选择职位（非必选）"
-          @click="show3"
-          :value="areada"
+            type
+            label="职位："
+            placeholder="请选择职位 >"
+            :value="job_value"
+            @click="choose_job()"
+            readonly
           />
           <van-field
          
           type="text"
-          label="省市区"
+          label="省市区:"
           placeholder="请选择省市区（非必选）"
           @click="show2"
           :value="area_data"
@@ -85,7 +93,7 @@
          <van-field
           v-model="nanf"
           type="text"
-          label="详细地址"
+          label="详细地址:"
           placeholder="请输入详细地址（非必填）"
           
           />
@@ -102,6 +110,9 @@
          <van-popup v-model="show1" position="bottom" :overlay="true" >
            <!-- <van-area :area-list="areaList" :columns-num="2"/> -->
            <van-area :columns-num="1" :area-list="areaList"  @confirm="wan" @cancel="guan" />         </van-popup>
+
+           <van-actionsheet v-model="show6" :actions="actions" @select="onSelect"/>
+           <van-actionsheet v-model="job_show" :actions="job_actions" @select="job_onSelect"/>
         <button class="cun" @click="top()">保存</button>
         
     </section>
@@ -119,6 +130,7 @@ export default {
    
     show: false,
     show1: false,
+    show6: false,
     avatar: require('../../assets/1.jpg'),
      username:'',
      password:'',
@@ -131,7 +143,28 @@ export default {
      nane:'',
      nanf:'',
     area_data:'',
-    areada:''
+    areada:'',
+
+    show6: false,
+      sex_value: "",
+      actions: [
+        {
+          name: "男"
+        },
+        {
+          name: "女"
+        }
+      ],
+      job_show: false,
+      job_value: "",
+      job_actions: [
+        {
+          name: "董事长"
+        },
+        {
+          name: "ceo"
+        }
+      ],
 
  }
  },
@@ -180,6 +213,25 @@ export default {
        this.areada=value[0].name
        this.show1=false
      },
+     choose_sex() {
+      this.show6 = true;
+    },
+     onSelect(item) {
+      // 点击选项时默认不会关闭菜单，可以手动关闭
+      this.show6 = false;
+      this.sex_value = item.name;
+    },
+    choose_job() {
+      this.job_show = true;
+    },
+    // 选择职位弹出层
+    job_onSelect(item) {
+      // 点击选项时默认不会关闭菜单，可以手动关闭
+      this.job_show = false;
+      this.job_value = item.name;
+    },
+    
+
  
  }
 }
@@ -218,4 +270,7 @@ export default {
     border-radius: 0.1rem;
     margin: 0.4rem 0 0 2rem;
  }
+ .van-field__control {
+    text-align: right !important;
+}
 </style>
