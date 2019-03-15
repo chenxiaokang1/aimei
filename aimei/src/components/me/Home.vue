@@ -233,6 +233,7 @@ text-align: center;
 		display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+		margin-bottom: 1rem;
 	}
 	.xiang2 img{
 		width:100%;

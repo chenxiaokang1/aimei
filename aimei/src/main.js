@@ -5,9 +5,12 @@ import App from './App'
 import router from './router'
 import Vant from 'vant';
 import 'vant/lib/index.css'
+import Mui from 'vue-awesome-mui';
+
 
 Vue.config.productionTip = false
 Vue.use(Vant)
+Vue.use(Mui);
 /* eslint-disable no-new */
 new Vue({
   el: '#app',

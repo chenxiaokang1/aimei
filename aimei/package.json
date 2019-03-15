@@ -12,6 +12,7 @@
   "dependencies": {
     "vant": "^1.6.9",
     "vue": "^2.5.2",
+    "vue-awesome-mui": "^1.7.3",
     "vue-router": "^3.0.1"
   },
   "devDependencies": {

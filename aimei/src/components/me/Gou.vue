@@ -38,8 +38,8 @@
             />
          </van-goods-action>
          <van-popup v-model="show" position="bottom" :overlay="false">
-            <div class="go">
-                <div class="top">
+            <div class="ggo">
+                <div class="tops">
                     <img src="../../assets/1.jpg">
                     <ul class="qing">
                         <li class="xx" @click="xguan"><img src="../../assets/xx.jpg"></li>
@@ -127,18 +127,20 @@ section{
     width: 100%;
     height: 100%;
 }
-.go{
+.ggo{
     height: 2rem;
 }
-.top{
+.tops{
     display: flex;
-    margin-top: 0.3rem;
+    margin: 0.3rem auto 0;
+    width: 95%;
+
     
 }
-.top ul{
+.tops ul{
     margin-left: 0.2rem;
 }
-.top img{
+.tops img{
    width: 22%;
     height: 72%;
     margin-left: 0.2rem;
@@ -147,12 +149,13 @@ section{
     margin-top: 0.2rem;
     display: flex;
     margin-left: 0.2rem;
+    width: 95%;
 }
 .bottom p{
     width: 20%
 }
 .van-stepper{
-    margin-left: 3.8rem;
+    margin-left: 2.8rem;
 }
 .qing{
     position: relative;

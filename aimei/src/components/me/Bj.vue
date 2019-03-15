@@ -1,5 +1,5 @@
 <template>
- <div>
+ <div class="c-tp">
   
      <van-nav-bar
         title="编辑资料"
@@ -88,6 +88,7 @@
           placeholder="请选择省市区（非必选）"
           @click="show2"
           :value="area_data"
+          readonly
           />
           
          <van-field
@@ -237,7 +238,7 @@ export default {
 }
 
 </script>
-<style scoped>
+<style>
 .rz-picter{
   display: flex;
   flex-direction: column;
@@ -272,5 +273,14 @@ export default {
  }
  .van-field__control {
     text-align: right !important;
+}
+.c-tp{
+  display: flex;
+    height: 100%;
+    flex-direction: column;
+}
+section{
+  flex: 1;
+    overflow: auto;
 }
 </style>

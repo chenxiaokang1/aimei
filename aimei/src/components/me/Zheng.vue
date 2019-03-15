@@ -1,6 +1,6 @@
 <template>
 	<div class="zhen">
-    <header>
+    <div class="c-s">
       <van-search placeholder="请输入搜索关键词" v-model="value" />
       <div class="tap">
         <router-link to='/zheng/quan' tag="span">全部</router-link>
@@ -10,10 +10,10 @@
         <router-link to='/xz' tag="span">吸脂</router-link>
         <router-link to='/ns' tag="span">玻尿酸</router-link>
       </div>
-    </header>
-    <section>
+    </div>
+    <div class="c-d">
       <router-view></router-view>
-    </section>
+    </div>
 	</div>
 </template>
 
@@ -30,22 +30,18 @@
 </script>
 
 <style scoped>
-header{
-  position: fixed;
-    width: 100%;
-}
-section{
-  
-}
+
+
 .van-search__content{
   border-radius: 0.34rem;
 }
 .zhen{
   display: flex;
   flex-direction: column;
+  height: 100%;
 
 }
-section{
+.c-d{
   flex: 1;
   overflow: auto;
 }

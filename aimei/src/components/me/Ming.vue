@@ -1,6 +1,6 @@
 <template>
- <div>
-     <header>
+ <div class="c-uu">
+     <div class="c-ee">
          <van-nav-bar
         title="超级名片"
         left-text="返回"
@@ -8,8 +8,8 @@
         left-arrow
         @click-left="onClickLeft"
         />
-     </header>
-     	<section>
+     </div>
+     	<div class="c-rr">
          <div  v-for="(item,i) in msg" :key="i" class="pian">
           <div class="csh">
             <img :src="item.img" class="imo">
@@ -29,10 +29,10 @@
               <p>地址：{{item.dizhi}}</p>
             </div>
       </div>
-    </section>
-    <footer>
+    </div>
+    <div class="c-tt">
       <van-button square type="primary" to="/bj" class="jia">修改名片</van-button>
-    </footer>
+    </div>
  </div>
 </template>
 
