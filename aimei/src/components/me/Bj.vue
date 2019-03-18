@@ -11,7 +11,7 @@
     
     <section>
       
-      <van-cell-group>
+      <van-cell-group class="c-todu">
         <van-field
           v-model="username"
           
@@ -245,10 +245,12 @@ export default {
   border-bottom: 0.01rem solid #f5f5f5;
   background: white;
   height: 2rem;
+  position: relative;
 }
 .rz-picter p{
-  width: 41%;
-  margin-top: 1rem;
+  width: 56%;
+    margin-top: 1rem;
+    text-align: center;
 }
 .uppic {
    height: 1.5rem;
@@ -262,16 +264,16 @@ export default {
    position: absolute;
    left: 5rem;
    width: 26%;
-   height: 11%;
+   height: 74%;
  }
  .cun{
        width: 50%;
     height: 0.6rem;
     background: #c1a25f;
     border-radius: 0.1rem;
-    margin: 0.4rem 0 0 2rem;
+    margin: 0.4rem 0 1rem 2rem;
  }
- .van-field__control {
+ .c-todu input{
     text-align: right !important;
 }
 .c-tp{

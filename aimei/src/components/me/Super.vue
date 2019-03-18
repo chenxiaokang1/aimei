@@ -11,7 +11,7 @@
         <img src="../../assets/xx.jpg" class="imt">
       </div>
     </header>
-    <van-button square type="primary" to="/bj" class="jia">添加名片</van-button>
+    <router-link to="/bj" class="jia">添加名片</router-link>
 	</div>
 </template>
 
@@ -20,7 +20,7 @@
   name: 'Super',
   data () {
     return {
-      msg:[{name:"你",number:"1243454",xing:'男',img:require("../../assets/1.jpg")}]
+      msg:[{name:"阿卡丽",number:"1243454",xing:'男',img:require("../../assets/ming1.png")}]
     }
     
   },
@@ -43,6 +43,9 @@
 .fu{
       margin-left: -3rem;
 }
+.fu li{
+  margin-bottom: 0.1rem;
+}
 .imt{
   width: 4%;
   height: 10%;
@@ -60,14 +63,18 @@
     border-radius: 0.1rem;
 }
   .jia{
-    margin-top: 7rem;
+   
     width: 4.2rem;
     height: 0.84rem;
     margin-left: 1.6rem;
     border-radius: 0.2rem;
+     background: #c1a25f;
+     display: block;
+     text-align: center;
+     line-height: 0.84rem;
   }
-  .van-button--primary{
+  /* .van-button--primary{
     background: #c1a25f;
     border-color: #c1a25f;
-  }
+  } */
 </style>

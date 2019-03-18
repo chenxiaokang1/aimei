@@ -6,6 +6,8 @@ import router from './router'
 import Vant from 'vant';
 import 'vant/lib/index.css'
 import Mui from 'vue-awesome-mui';
+import "./assets/font/font_t/iconfont.css";
+
 
 
 Vue.config.productionTip = false

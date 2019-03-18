@@ -1,8 +1,8 @@
 <template>
-  <div>
+  <div class="c-reward">
     <van-nav-bar title="奖励明细"  left-arrow @click-left="reruen"></van-nav-bar>
-
-    <div class="top">
+  <div class="c-top">
+    <div class="ttsop">
       <div>
         <span>累计奖励</span>
         <span>136.00</span>
@@ -16,16 +16,17 @@
         <span>136.00</span>
       </div>
     </div>
-    <p class="tips">买家确认收货后，立即获得奖励明细</p>
+    <p class="tipss">买家确认收货后，立即获得奖励明细</p>
     <div class="record">
       <div class="title list">
         <span>提现申请</span>
         <span>总佣金：123600.00</span>
       </div>
-      <div class="list" v-for="(item,index) in 8" :key="index">
+      <div class="list" v-for="(item,index) in 18" :key="index">
         <span>2017-09-12  12:12:30</span>
         <span>1000</span>
       </div>
+    </div>
     </div>
   </div>
 </template>
@@ -44,7 +45,18 @@ export default {
 };
 </script>
 <style scoped>
-.top {
+.c-reward{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+
+}
+.c-top{
+  flex: 1;
+  overflow: auto;
+  
+}
+.ttsop {
   width: 7rem;
   margin: 0.2rem auto;
   padding: 0.4rem 0.2rem;
@@ -52,14 +64,15 @@ export default {
   display: flex;
   justify-content: space-around;
   border-radius: 0.1rem;
+ 
 }
-.top div {
+.ttsop div {
   text-align: center;
   display: flex;
   flex-direction: column;
   color: #888;
 }
-.tips {
+.tipss {
   color: #888;
   margin: 0.2rem 0.3rem;
 }

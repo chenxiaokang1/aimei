@@ -11,15 +11,17 @@
      </header>
      <section>
          <van-swipe :autoplay="3000" indicator-color="white">
-      <van-swipe-item><img src="../../assets/1.jpg"></van-swipe-item>
-      <van-swipe-item><img src="../../assets/2.jpg"></van-swipe-item>
-      <van-swipe-item><img src="../../assets/3.jpg"></van-swipe-item>
+      <van-swipe-item><img src="../../assets/lun1.png"></van-swipe-item>
+      <van-swipe-item><img src="../../assets/xiang_79.png"></van-swipe-item>
+      <van-swipe-item><img src="../../assets/xiang_80.png"></van-swipe-item>
      </van-swipe>
      <div class="jst">
          <p>韩式永久韩式半永久 韩式纹眉 美瞳线 清秀眉目</p>
          <p><span class="hu">￥599.0</span> <span class="yin">送1000积分</span></p>
      </div>
-     
+     <div class="c-jie">
+         <img src="../../assets/xiang_78.png">
+     </div>
 
 
      </section>
@@ -27,15 +29,20 @@
          <van-goods-action>
             <van-goods-action-big-btn
                 text="加入购物车"
-                icon="cart"
+                
                 @click="onClickBigBtn"
             />
+            
+            <van-icon name="shopping-cart" class="c-che"/>
+           
             <van-goods-action-big-btn
                 primary
+                
                 text="立即购买"
                 @click="on"
                
             />
+             <van-icon name="gold-coin" class="c-qian"/>
          </van-goods-action>
          <van-popup v-model="show" position="bottom" :overlay="false">
             <div class="ggo">
@@ -83,7 +90,8 @@ export default {
         this.show=false
     },
     on(){
-        this.show5=true
+        // this.show5=true
+        this.$router.push('/ding')
     },
    
 
@@ -95,6 +103,30 @@ export default {
 
 </script>
 <style scoped>
+.c-qian{
+        font-size: 0.6rem;
+    color: white;
+    position: absolute;
+    top: 0.2rem;
+    left: 4.3rem;
+}
+.c-che{
+    font-size: 0.6rem;
+    color: white;
+    position: absolute;
+    top: 0.2rem;
+    left: 0.4rem;
+}
+
+footer{
+    position: relative;
+}
+.c-jie{
+    margin-bottom: 1rem;
+}
+.c-jie img{
+    width: 100%;
+}
 .you{
     height: 100vh;
     display: flex;
@@ -128,7 +160,7 @@ section{
     height: 100%;
 }
 .ggo{
-    height: 2rem;
+    height: 2.5rem;
 }
 .tops{
     display: flex;

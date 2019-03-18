@@ -1,7 +1,7 @@
 <template>
  <div class="suo">
      <ul class="lsuo">
-         <li v-for="(item, i) in amsg" :key="i"><img :src="item.img"><span class="sese">{{item.ren}}</span><span class="se">{{item.many}}</span></li>
+         <router-link to="/gou" tag="li" v-for="(item, i) in amsg" :key="i"><img :src="item.img"><span class="sese">{{item.ren}}</span><span class="se">{{item.many}}</span></router-link>
      </ul>
  </div>
 </template>
@@ -11,7 +11,7 @@ export default {
  data () {
  return {
      amsg:[
-         {ren:"艾美联合创始人",many:"￥0.00",img:require("../../assets/2.jpg")},
+         {ren:"艾美联合创始人",many:"￥0.00",img:require("../../assets/shou_45.png")},
 		
 		 
 		
@@ -30,7 +30,7 @@ export default {
     .lsuo{
         display: flex;
         flex-wrap: wrap;
-            margin-top: 1.55rem;
+           
         
     }
     .lsuo li{

@@ -25,10 +25,10 @@
          </div>
          <div class="zhon">
              <ul class="zhonu">
-                 <li>商品金额：<span class="se">￥599.00</span></li>
-                 <li>运费<span>包邮</span></li>
-                 <li>0积分可抵扣0.00元<span><van-switch v-model="checked" size="0.24rem" /></span></li>
-                 <li>0爱心值可抵扣0.00元<span><van-switch v-model="checked2"  size="0.24rem"/></span></li>
+                 <li><i>商品金额：</i><span class="se">￥599.00</span></li>
+                 <li><i>运费</i><span>包邮</span></li>
+                 <li class="c-jifen"><i>0积分可抵扣0.00元</i><span><van-switch v-model="checked" size="0.5rem" /></span></li>
+                 <li class="c-jifen"><i>0爱心值可抵扣0.00元</i><span><van-switch v-model="checked2"  size="0.5rem"/></span></li>
              </ul>
          </div>
          <div class="xin">
@@ -68,11 +68,24 @@ export default {
 
 </script>
 <style scoped>
+.hsbyj{
+    margin: 0.2rem 0;
+    background: white;
+}
+.hsbyj p{
+    border-top: 0.05rem solid #f5f5f5;
+    text-align: right;
+}
+.c-jifen span{
+    margin-top: 0.1rem;
+    height: 100%;
+}
 .lrf{
     margin-left: 2rem;
 }
 .se{
     color: #c1a25f;
+        margin-right: 0.2rem;
 }
 .xin input{
     width: 95%;
@@ -91,6 +104,7 @@ export default {
 section{
     flex: 1;
     overflow: auto;
+    
 
 }
 footer{
@@ -98,10 +112,12 @@ footer{
     display: flex;
     
     justify-content: space-between;
+    height: 0.8rem;
+    line-height: 0.8rem;
 }
 footer p{
-    height: 0.5rem;
-    line-height: 0.5rem;
+    height: 0.8rem;
+    line-height: 0.8rem;
 }
 .one span{
     color: #c1a25f;
@@ -115,11 +131,16 @@ footer p{
     background: white;
     margin-top: 0.2rem;
 }
+.tian p{
+    line-height: 0.5rem;
+    margin: 0 0.2rem; 
+}
 .tian span{
     float:right;
 }
 .hsb{
     display: flex;
+        padding: 0.2rem 0.1rem;
 }
 .hsb img{
     width: 20%;
@@ -138,11 +159,18 @@ footer p{
     margin: 0.1rem 0;
 }
 .zhonu li{
-    height: 0.5rem;
-    line-height: 0.5rem;
+    height: 0.8rem;
+    line-height: 0.8rem;
     margin-top:0.1rem;
     border-top: 0.01rem solid #f5f5f5;
     border-bottom: 0.01rem solid #f5f5f5;
     background: white;
+}
+.zhonu span{
+    float: right;
+    margin-right: 0.2rem;
+} 
+.zhonu i{
+    margin-left: 0.2rem;
 }
 </style>

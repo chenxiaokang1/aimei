@@ -5,10 +5,10 @@
     </section>
  
     <footer class="foo">
-    	<router-link to="/home">首頁</router-link>
-    	<router-link to="/zheng">整形項目</router-link>
-    	<router-link to="/super">超級名片</router-link>
-      <router-link to="/myCenter">我的</router-link>
+    	<router-link to="/home"><i class="iconfont icon-yemian-copy"></i>首页</router-link>
+    	<router-link to="/zheng"><i class="iconfont icon-icon1"></i>整形项目</router-link>
+    	<router-link to="/super"><i class="iconfont icon-mingpian"></i>超级名片</router-link>
+      <router-link to="/myCenter"><i class="iconfont icon-mine-gray"></i>我的</router-link>
     </footer>
 
   </div>
@@ -58,6 +58,15 @@ export default {
   border-top: 0.01rem solid #ccc;
   background: #ffffff;
   overflow: hidden;
+}
+.foo a{
+  display: flex;
+  flex-direction: column;
+
+}
+.foo i{
+  text-align: center;
+  font-size: 0.5rem;
 }
 
 </style>

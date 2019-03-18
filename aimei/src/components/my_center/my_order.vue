@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="c-you">
     <van-nav-bar title="我的订单"  left-arrow @click-left="reruen"></van-nav-bar>
 
     <div class="nav">
@@ -182,6 +182,12 @@ export default {
 };
 </script>
 <style scoped>
+.c-you{
+  height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
 .nav {
   margin: 0.3rem 0;
   display: flex;
@@ -195,6 +201,8 @@ export default {
   border-bottom: 0.02rem solid #d2bc91;
 }
 .order-list {
+  flex: 1;
+  overflow: auto;
 }
 .order_item {
   padding: 0.3rem;
